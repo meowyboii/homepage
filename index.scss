@@ -96,6 +96,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  border-radius: 10px;
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.212);
   margin-bottom: 20px;
   background-color: whitesmoke;
@@ -139,6 +140,7 @@ h2 {
   .bg-skewed {
     height: 600px;
     margin-top: -290px;
+    transform: skewY(-20deg);
   }
   .main-photo {
     width: 280px;
@@ -199,12 +201,16 @@ h2 {
   }
 }
 @media (min-width: 1000px) {
+  .bg-skewed {
+    height: 800px;
+    margin-top: -360px;
+    transform: skewY(-15deg);
+  }
   .main-photo {
     width: 360px;
-    height: 390px;
-    top: 400px;
+    height: 400px;
+    top: 450px;
     transform: translate(-125%, -85%);
-    background-color: $primary-color;
     h1 {
       top: 70%;
       left: 61%;
@@ -212,7 +218,7 @@ h2 {
   }
   .about {
     width: 500px;
-    transform: translate(-18%, -75%);
+    transform: translate(-20%, -60%);
     .links {
       display: flex;
       justify-content: end;
@@ -220,10 +226,17 @@ h2 {
     h2 {
       text-align: start;
     }
+    p {
+      margin-bottom: 30px;
+    }
   }
   .spacer {
     margin: 0;
     float: none;
     padding: 0;
+  }
+
+  .work {
+    max-width: 350px;
   }
 }
