@@ -13,17 +13,19 @@ p {
 h2 {
   text-align: center;
   margin: 0;
+  font-size: 1.6rem;
 }
 
 .bg-skewed {
   background-color: #698167;
   height: 550px;
-  transform: skewY(-30deg);
+  transform: skewY(-25deg);
   margin-top: -250px;
   position: relative;
   margin-bottom: 190px;
   box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.11);
   overflow: hidden;
+  z-index: -1;
 }
 
 .main-photo {
@@ -55,9 +57,9 @@ h2 {
 
 .about {
   padding: 40px;
-  font-size: 1.1rem;
 }
 .about p {
+  font-size: 1.1rem;
   margin: 10px 0;
 }
 
@@ -71,13 +73,19 @@ h2 {
   font-size: 2rem;
 }
 
+.my-works {
+  padding: 40px;
+}
+.my-works h2 {
+  margin-bottom: 30px;
+}
+
 .works {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 40px;
 }
 .works h2 {
   margin-bottom: 15px;
@@ -131,8 +139,8 @@ h2 {
 
 @media (min-width: 600px) {
   .bg-skewed {
-    height: 650px;
-    margin-top: -280px;
+    height: 600px;
+    margin-top: -290px;
   }
   .main-photo {
     width: 280px;
@@ -157,6 +165,7 @@ h2 {
     top: 330px;
     transform: translate(-50%, -50%);
     background-color: whitesmoke;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.075);
   }
   .about .links {
     display: none;
@@ -167,7 +176,7 @@ h2 {
     padding: 15px;
   }
   .my-works {
-    padding-top: 20px;
+    padding-top: 100px;
   }
   .contact {
     position: relative;
@@ -181,8 +190,39 @@ h2 {
     height: 250px;
     margin-right: 30px;
   }
+  .contact-info h2 {
+    text-align: start;
+  }
   .contact-info .links {
     justify-content: start;
+  }
+}
+@media (min-width: 1000px) {
+  .main-photo {
+    width: 360px;
+    height: 390px;
+    top: 400px;
+    transform: translate(-125%, -85%);
+  }
+  .main-photo h1 {
+    top: 70%;
+    left: 61%;
+  }
+  .about {
+    width: 500px;
+    transform: translate(-18%, -75%);
+  }
+  .about .links {
+    display: flex;
+    justify-content: end;
+  }
+  .about h2 {
+    text-align: start;
+  }
+  .spacer {
+    margin: 0;
+    float: none;
+    padding: 0;
   }
 }
 
