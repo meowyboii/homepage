@@ -203,6 +203,7 @@ h2 {
     height: 390px;
     top: 400px;
     transform: translate(-125%, -85%);
+    background-color: #698167;
   }
   .main-photo h1 {
     top: 70%;
